@@ -1,7 +1,7 @@
 package controllers;
 
 import play.mvc.Result;
-import views.html.login;
+import views.html.*;
 
 public class Login extends RuPinController {
 

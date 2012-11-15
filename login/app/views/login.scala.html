@@ -1,3 +1,27 @@
+@(signupForm: Form[is.ru.honn.rupin.domain.UserAuthentication])
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@title= {
+Login
+}
+
+@main(title, nav = "login") {
+
+    <div class="container">
+        <form class="login">
+            <h2 class="form-login-heading">Rupin User Login</h2>
+            <input type="text" class="input-block-level" placeholder="Username">
+            <input type="password" class="input-block-level" placeholder="Password">
+            <button class="btn btn-large btn-primary" type="submit">Login</button>
+            <p>Not a proud Memeber? <a href="@routes.Application.index">Signup</a></p>
+        </form>
+    </div>
+}
+
+<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,8 +68,10 @@
             <input type="text" class="input-block-level" placeholder="Username">
             <input type="password" class="input-block-level" placeholder="Password">
             <button class="btn btn-large btn-primary" type="submit">Login</button>
-            <p>Not a user? <a href="@routes.Application.index">Signup</a></p>
+            <p>Not a proud Memeber? <a href="@routes.Application.index">Signup</a></p>
         </form>
     </div>
 </body>
 </html>
+
+-->
